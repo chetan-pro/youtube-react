@@ -1,0 +1,134 @@
+
+
+svg {
+  width: 30px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  height: 56px;
+  background: #fff;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0%;
+  width: 100%;
+  padding-bottom: 50px;
+  z-index: 1;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  line-height: 0;
+  align-items: center;
+}
+
+#logo {
+  font-size: var(--font-size);
+}
+#logo i {
+  color: #f00;
+}
+#logo span {
+  font-family: var(--logo-font);
+  font-weight: 400;
+  font-size: var(--font-size);
+  margin-left: 4px;
+}
+
+#navbtn {
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  padding: 12px;
+  margin-left: 10px;
+}
+
+#navbtn:active {
+  background-color: #ccc4;
+}
+
+.left-icons,
+.search,
+.right-icons {
+  display: flex;
+  align-items: center;
+}
+
+.left-icons,
+.right-icons {
+  list-style-type: none;
+}
+.left-icons li {
+  padding: 10px 20px;
+}
+.search .searchbtn {
+  border: 1px solid #ccc;
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ccc3;
+  padding: 1px 6px;
+  text-align: center;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.search-icon {
+  display: none;
+}
+.searchbtn i {
+  padding: 0.5rem 3rem;
+  font-size: 15px;
+}
+.search input {
+  min-width: 30rem;
+  padding: 1px 2px;
+  padding-left: 4px;
+  height: var(--height);
+  border: 1px solid #ccc;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  font-size: 14px;
+  color: rgb(133,133,133);
+  font-weight: 400;
+}
+
+.right-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.right-icons li i {
+  padding: 1px;
+}
+
+.right-icons .profile {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+}
+
+.right-icons .profile img {
+  width: 100%;
+}
+.right-icons li {
+  margin: 0 1rem;
+}
+
+.profile span {
+  background: #ccc;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 0 !important;
+  overflow: hidden;
+}
+
+.profile span i {
+  font-size: 15px;
+  padding: 10px;
+}
