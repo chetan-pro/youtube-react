@@ -53,12 +53,14 @@ class Main extends Component {
                   <a href="#" className="video-title">
                     {video.title}
                   </a>
+                  <div className="video-review">
                   <a href="#" className="video-channel-name">
                     {video.channel_name}
                   </a>
                   <div className="video-metadata">
                     <span>{video.views} views</span> •{" "}
                     <span>{video.time} ago</span>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -85,12 +87,14 @@ class Main extends Component {
                   <a href="#" className="video-title">
                     {video.title}
                   </a>
+                  <div className="video-review">
                   <a href="#" className="video-channel-name">
                     {video.channel_name}
                   </a>
                   <div className="video-metadata">
                     <span>{video.views} views</span> •{" "}
                     <span>{video.time} ago</span>
+                  </div>
                   </div>
                 </div>
               </div>

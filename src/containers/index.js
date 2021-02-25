@@ -7,7 +7,7 @@ function index(props) {
   return (
     <div className='container'>
      <Sidebar state = {props.state} /> 
-     <Maindiv value={props.value} />
+     <Maindiv />
     </div>
   )
 }

@@ -1,21 +1,23 @@
 .sidebar {
-  width: 255px;
+  width: 240px;
   background: #fff;
-  overflow-y: auto;
-}
-.sidebar.side-trigger {
-  width: 100px;
-}
-hr{
-  width: 100%;
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0.3);
-  margin: 10px 0px;
-}
-.trigger{
-  padding: 0px 24px;
 }
 
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 200px;
+  }
+}
+
+.sidebar.side-trigger {
+  width: 72px;
+}
+hr {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 10px 0px;
+}
 .sidebar.sidebar.side-trigger:hover {
   overflow-y: hidden;
 }
@@ -29,99 +31,57 @@ hr{
   display: none;
 }
 
-.sidebar.side-trigger li.sub {
+.sidebar li.sub {
   border: none;
 }
 
 .sidebar.side-trigger #sidebar-content li.trigger {
   display: flex;
   flex-direction: column;
+  padding: 16px 0px 14px;
+  height: auto;
+}
+.sidebar.side-trigger #sidebar-content li.trigger .MuiSvgIcon-root {
+  margin-right: 0px;
+  margin-bottom: 6px;
 }
 
 .sidebar.side-trigger #sidebar-content li.trigger span {
   font-size: 10px;
 }
 
-.sidebar.side-trigger #sidebar-content li.trigger > svg {
-  height: auto !important;
-}
-
-.sidebar.mobile {
-  height: 100vh;
-  overflow-y: scroll;
-  transform: translateX(0);
-}
-
-#navbtn_mobile {
-  padding: 18px 22px 0 20px;
-}
-.sidebar.mobile .left-icons {
-  padding: 0 20px;
-  font-size: var(--font-size);
-}
-.sidebar.mobile #logo {
-  padding: 10px 0 10px 11px;
-}
-
-.sidebar.mobile #logo span {
-  padding: 0;
-}
-
-.sub {
-  border-bottom: 1px solid #ccc3;
-}
-.sidebar:hover {
-  overflow-y: scroll;
-}
-.sidebar::-webkit-scrollbar {
-  width: 5px;
-  border-radius: 2px;
-}
-.sidebar::-webkit-scrollbar-track {
-  background: #ffffff;
-}
-.sidebar::-webkit-scrollbar-thumb {
-  background: #f1f1f1;
-}
-.sidebar:hover.sidebar::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-
 #sidebar-content li,
 .subscriptions li,
 .more li {
   display: flex;
   align-items: center;
-  padding: 10px 35px;
   font-size: 14px;
-}
-
-
-
-#sidebar-content li i,
-.subscriptions li i,
-.more li i {
-  font-size: var(--font-size);
-  width: 30px;
-  text-align: center;
-}
-
-.sidebar ul li span {
-  padding: 0 20px;
+  padding: 0 24px;
+  height: 40px;
+  color: #606060;
+  font-weight: 500;
 }
 
 .sidebar ul li.active {
   background-color: #ccc6;
 }
-.sidebar ul li.active i {
+.sidebar ul li:hover {
+  background-color: #ccc6;
+  cursor: pointer;
+}
+
+.sidebar > ul > li > .MuiSvgIcon-root {
+  margin-right: 24px;
+  font-size: 20px;
+}
+.sidebar ul li.active .MuiSvgIcon-root {
   color: #f00;
 }
 
 .side-header {
   padding: 0 35px;
   font-size: 14px;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 .sidebar .left-icons li {
@@ -142,5 +102,45 @@ hr{
   padding: 5px 35px;
   font-size: 12px;
   font-weight: 400;
+}
+@media(max-width:850px){
+  .sidebar{
+    width: 180px;
+  }
+}
+@media (max-width: 750px) {
+  .sidebar {
+    padding: 10px 0px;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    z-index: 999;
+    width: 100%;
+  }
+  .sidebar li,
+  .sidebar #sidebar-content li,
+  .sidebar h4,
+  .sidebar div,
+  .sidebar hr {
+    display: none;
+  }
+  .sidebar #sidebar-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sidebar #sidebar-content li.trigger {
+    display: flex;
+    flex-direction: column;
+    height: 48px;
+  }
+  .sidebar ul li.active {
+    background-color: transparent;
+  }
+  .sidebar #sidebar-content li.trigger .MuiSvgIcon-root {
+    margin-right: 0px;
+    margin-bottom: 6px;
+    font-size: 22px;
+  }
 }
 

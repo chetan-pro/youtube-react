@@ -27,27 +27,27 @@ function index(props) {
           <span>Subscriptions</span>
         </li>
         <hr />
-        <li className="trigger">
+        <li className="sub trigger">
           <VideoLibraryIcon />
           <span>Library</span>
         </li>
-        <li>
+        <li className="sub">
           <HistoryIcon />
           <span>History</span>
         </li>
-        <li>
+        <li className="sub">
           <OndemandVideoIcon />
           <span>More video</span>
         </li>
-        <li>
+        <li className="sub">
           <WatchLaterIcon />
           <span>Watch Later</span>
         </li>
-        <li>
+        <li className="sub">
           <ThumbUpAltIcon />
           <span>Like video</span>
         </li>
-        <li>
+        <li className="sub">
           <ArrowDropDownIcon />
           <span>show more</span>
         </li>
@@ -58,7 +58,7 @@ function index(props) {
         <span>Copyright</span>
         <span>Contact Us</span>
         <span>Creators</span>
-        <span>Advertise</span>
+        <span>Advertise</span><br />
         <span>Developers</span>
       </div>
       <div className="footer">&copy; 2020 Google LLC</div>
